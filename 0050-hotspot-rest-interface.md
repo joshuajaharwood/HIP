@@ -1,21 +1,39 @@
-# HIP Template
+# HIP-50: TODO: Title
 
-- Author(s): <!-- your GitHub @username -->
-- Start Date: <!-- fill me in with today's date, YYYY-MM-DD -->
-- Category: <!-- economic, technical, meta -->
+- Author(s): @joshuajaharwood
+- Start Date: 2022-01-02
+- Category: Technical
 - Original HIP PR: <!-- leave this empty; maintainer will fill in ID of this pull request -->
 - Tracking Issue: <!-- leave this empty; maintainer will create a discussion issue -->
 
 # Summary
 [summary]: #summary
 
-One paragraph explanation of the proposal.
+This proposal suggests the implementation of a standardised read-only HTTP REST API, exposing current hotspot status and diagnostic information as JSON. This would be optionally enabled by hotspot owners, allowing network access to realtime hotspot information.  
 
 # Motivation
 [motivation]: #motivation
 
+Accessing realtime hotspot status and diagnostic information is currently inconvenient and impractical. Obtaining data via Bluetooth requires physical access to the device, and data obtained via the Helium Blockchain API can be particularly outdated. Additionally, explorer data is constructed from blockchain activity which can severely limit its diagnostic usefulness if a hotspot isn't performing any blockchain activity.
+
+
+
+Accessing realtime hotspot status and diagnostic information is currently inconvenient and impractical in common use-cases. Retrieving this information over Bluetooth requires physical access, only provides information for the duration of the Bluetooth session and isn't easily serialisable. These provide serious issues to administrators of hotspot fleets as data collection must be performed by hosts who may not be technically capable.
+
+Additionally, hotspot information retrieved via the Helium Blockchain API relies on 
+
+Accessing hotspot diagnostic information can currently be done one of three ways, with each having significant drawbacks:
+
+## Over Bluetooth
+asdf
+
+## Manufacturer interfaces
+Using proprietary manufacturer interfaces
+
+## 
+
 Why are we doing this? What use cases does it support? What problems does it
-solve? What is the expected outcome?
+solve? What is the expected outcome? 
 
 # Stakeholders
 [stakeholders]: #stakeholders
